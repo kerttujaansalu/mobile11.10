@@ -2,11 +2,24 @@
   box-sizing: border-box;
 }
 
+body {
+  position: relative;
+  height: 780px;
+  width: 100%
+  font-family: 'Montserrat';
+}
+
 .header {
   position: relative;
   background: white;
   font-family: 'Montserrat';
   font-size: 20px;
   color: black;
+  border-bottom-left-radius: 15px;
+}
 
+@media only screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
 }
