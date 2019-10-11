@@ -4,27 +4,58 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="style.css">
-
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
   <section class="header">
     <h1>Payment</h1>
   </section>
-<div class="payment">
+
+<form>
   <section class="payment-info">
-    <label>Card number</label>
-    <input type="text" name="card-number" placeholder="XXXX XXXX XXXX XXXX">
 
+    <div class="card__number">
+      <label>Card number <br>
+      <input type="text" name="card-number" required placeholder="XXXX XXXX XXXX XXXX">
+      </label>
+    </div>
 
+    <div class="card__owner">
+      <label>Name <br>
+      <input type="text" name="name" required placeholder="JOHN DOE">
+      </label>
+    </div>
+
+    <div class="card__expiration">
+      <label>Expires <br>
+      <input type="text" name="expiration" required placeholder="XX/XX">
+      </label>
+    </div>
+
+    <div class="card__verification"
+      <label>CVC <br>
+      <input type="text" name="verification" required placeholder="555">
+      </label>
+    </div>
   </section>
+</form>
+    <section class="checkout">
+      <div class="product--names">
+        <input type="text" name="product" required placeholder="Product 1">
+        <input type="text" name="product" required placeholder="Product 2">
+      </div>
 
-  <section class="products">
+      <div class="total">
+        <p>Total</p>
+        <p>30</p>
+        <span>€</span>
+      </div>
+    </section>
 
-  </section>
+    <section class="continue">
+      <p>CONTINUE</p>
+      <span>></span>
+    </section>
 
-  <section class="continue">
-
-  </section>
-  </div>
 </body>
 </html>
