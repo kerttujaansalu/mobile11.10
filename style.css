@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Montserrat';
+  flex-direction: column;
+  height:auto;
+
+}
+
+.header {
+  position: relative;
+  background: white;
+  font-size: 20px;
+  color: black;
+  border-bottom-left-radius: 50px;
+  margin-bottom: -50px;
+  height: 20%;
+  width: 100%;
+  padding: 80px 0 90px 70px;
+  z-index: 10;
+}
+
+form {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -50px;
+  border-bottom-left-radius: 50px;
+  background: linear-gradient(to bottom right, #00f5bc, #a853fc);
+  color: white;
+  z-index: 9;
+  height: 20%;
+  width: 100%;
+  padding: 70px 10%;
+}
+
+.card--info {
+  position: relative;
+  margin: 0 10px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.checkout {
+  position: relative;
+  margin-bottom: -50px;
+  border-bottom-left-radius: 50px;
+  background: #0f0024;
+  color: white;
+  z-index: 8;
+  height: 50%;
+  width: 100%;
+  padding: 70px 10%;
+}
+
+p {
+    display: block;
+    border-bottom: 1px solid white;
+    padding: 5px;
+  }
+
+
+span {
+  position: relative;
+  display: flex;
+  float: right;
+  margin-right: 0;
+  flex-direction: column;
+}
+
+.continue {
+  position: relative;
+  margin-bottom: -50px;
+  background: #a358fa;
+  color: white;
+  z-index: 7;
+  height: 10%;
+  width: 100%;
+  padding: 70px;
+  text-align: center;
+}
+
+input {
+  background: transparent;
+  border-style: none;
+  border-bottom: 1px solid white;
+  color: white;
+  margin: 10px 10px;
+  margin-left: 0;
+}
+
+input::placeholder {
+  color: white;
+  font-weight: 200;
+  font-family: 'Montserrat';
+  margin: 10px;
+}
+
+input, label {
+  font-weight: 400;
+}
+
+label {
+  font-size: 80%;
+
+}
+
+div {
+  display: block;
+}
+
+.card--info {
+  padding: 10px;
+  padding-left: 0;
+}
+
+button {
+  border-style: none;
+  background: transparent;
+  font-family: 'Montserrat';
+  font-size: 15px;
+  margin: 5%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+    width: 100%;
+  }
+}
